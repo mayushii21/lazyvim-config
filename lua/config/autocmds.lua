@@ -1,0 +1,15 @@
+-- Autocmds are automatically loaded on the VeryLazy event
+-- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
+-- Add any additional autocmds here
+
+-- Increase font size in Firenvim
+-- doesn't work
+-- vim.api.nvim_create_autocmd({ "UIEnter" }, {
+--   callback = function()
+--     vim.defer_fn(function()
+--       -- if vim.g.started_by_firenvim then
+--       vim.cmd("set guifont=*:h18")
+--       -- end
+--     end, 1000) -- Delay in milliseconds
+--   end,
+-- })
