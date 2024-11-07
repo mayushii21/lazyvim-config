@@ -102,6 +102,9 @@ vim.api.nvim_set_keymap("n", "k", 'v:count ? "k" : "gk"', { expr = true, noremap
 -- nnoremap <expr> k (v:count == 0 ? 'gk' : 'k')
 -- nnoremap <expr> j (v:count == 0 ? 'gj' : 'j')
 
+-- open Oil.nvim
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
 -- Map Backspace and Ctrl + h to delete the previous word
 vim.api.nvim_set_keymap("i", "<C-BS>", "<C-w>", { noremap = true })
 vim.api.nvim_set_keymap("i", "<C-h>", "<C-w>", { noremap = true })
